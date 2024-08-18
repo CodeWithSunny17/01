@@ -3,6 +3,12 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 section{
   height: 100vh;
   scroll-snap-align: center;
