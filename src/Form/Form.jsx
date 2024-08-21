@@ -8,7 +8,7 @@ export default function Form() {
     // const [password,setPassword] = useState()
 
     const [formdata, setFormdata] = useState({
-        name: "",
+        fullName: "",
         email: "",
         password: ""
     })
@@ -40,8 +40,8 @@ export default function Form() {
     <form onSubmit={handleSubmit}>
         <label>
             Name:
-            <input type="text" name="name"onChange={handleChnage} value={formdata.name}/>
-            {formdata.name}
+            <input type="text" name="fullName"onChange={handleChnage} value={formdata.fullName}/>
+            {formdata.fullName}
         </label>
         <label>
             Email:
