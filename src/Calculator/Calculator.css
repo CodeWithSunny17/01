@@ -1,0 +1,15 @@
+.Cal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+h1 {
+  height: 20px;
+}
+button {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+}

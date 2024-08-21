@@ -4,6 +4,7 @@ import Plusminus from './PlusMinus/Plusminus';
 import Todolist from './ToDoList/Todolist';
 import Form from './Form/Form'
 import Fetch from './Fetch/Fetch'
+import Calculator from './Calculator/Calculator'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <section>a</section>
       <section>b</section>
       <section>c</section>
-      <section>d</section>
+      <section><Calculator/></section>
       
     </div>
   );
