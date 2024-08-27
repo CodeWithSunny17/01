@@ -26,29 +26,29 @@ export default function Form2() {
   const validateForm = () => {
     const errors = {};
 
-    if (input.name.length === 0) {
+    if (!input.name) {
       errors.name = "name is required";
     }
-    if (input.email.length === 0) {
+    if (!input.email) {
       errors.email = "email is required";
     }
-    if (input.password.length === 0) {
+    if (!input.password) {
       errors.password = "password is required";
     } else if (input.password.length < 6) {
       errors.password = "password must be greater than 6 characters";
     }
-    if (input.confirmPassword.length === 0) {
+    if (!input.confirmPassword) {
       errors.confirmPassword = "confirm password is required";
     } else if (input.password !== input.confirmPassword) {
       errors.confirmPassword = "Password didn't match";
     }
-    if (input.age.length === 0) {
+    if (!input.age) {
       errors.age = "age is required";
     }
     else if (isNaN(input.age) || input.age < 18) {
       errors.age = "age is invalid";
     }
-    if (input.gender.length === 0) {
+    if (!input.gender) {
       errors.gender = "gender is required";
     }
     return errors;
@@ -58,11 +58,13 @@ export default function Form2() {
     e.preventDefault();
 
     const validateErrors = validateForm();
-    if (Object.keys(validateErrors) > 0) {
+    
+    if (Object.keys(validateErrors).length > 0) {
       setErrors(validateErrors);
     } else {
       setState(<p>Form submitted!</p>)
     }
+    console.log(errors.age)
   };
 
   return (
