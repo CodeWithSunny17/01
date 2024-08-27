@@ -62,7 +62,16 @@ export default function Form2() {
     if (Object.keys(validateErrors).length > 0) {
       setErrors(validateErrors);
     } else {
-      setState(<p>Form submitted!</p>)
+      setState('Form submitted!')
+      setInput({
+        name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        age: "",
+        gender: "",
+      });
+      setErrors({});
     }
     console.log(errors.age)
   };
