@@ -5,6 +5,7 @@ import Todolist from './ToDoList/Todolist';
 import Form from './Form/Form'
 import Fetch from './Fetch/Fetch'
 import Calculator from './Calculator/Calculator'
+import MultipleReturns from './MultipleReturns/MultipleReturns';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <section><Todolist/></section>
       <section><Form/></section>
       <section><Fetch/></section>
-      <section>a</section>
+      <section><MultipleReturns/></section>
       <section>b</section>
       <section>c</section>
       <section><Calculator/></section>
