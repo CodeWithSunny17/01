@@ -7,6 +7,7 @@ import Fetch from './Fetch/Fetch'
 import Calculator from './Calculator/Calculator'
 import MultipleReturns from './UseEffect/MultipleReturns/MultipleReturns';
 import Form2 from './Form2/Form2';
+import Form2UsingUseForm from './Form2/Form2UsingUseForm';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <section><Fetch/></section>
       <section><MultipleReturns/></section>
       <section><Form2/></section>
-      <section>c</section>
+      <section><Form2UsingUseForm/></section>
       <section><Calculator/></section>
       
     </div>
