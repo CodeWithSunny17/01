@@ -8,6 +8,7 @@ import Calculator from './Calculator/Calculator'
 import MultipleReturns from './UseEffect/MultipleReturns/MultipleReturns';
 import Form2 from './Form2/Form2';
 import Form2UsingUseForm from './Form2/Form2UsingUseForm';
+import ExpenseTracker from './ExpenseTracker/ExpenseTracker';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <section><Form2/></section>
       <section><Form2UsingUseForm/></section>
       <section><Calculator/></section>
+      <section><ExpenseTracker/></section>
       
     </div>
   );
