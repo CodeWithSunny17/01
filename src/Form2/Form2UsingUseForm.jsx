@@ -56,7 +56,7 @@ export default function Form2UsingUseForm() {
           <input
             type="text"
             name="age"
-            {...register("age", { required: "Age is Required" })}
+            {...register("age", { required: "Age is Required", validate: value => value >=18 || "Age must be greater than 18"})}
           />
           <div>{errors.age && <span>{errors.age.message}</span>}</div>
         </div>
